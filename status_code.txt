@@ -1,0 +1,37 @@
+POST
+------------------------------------------------------------------------
+Cenario      		|	Response status     |	Response Json
+------------------------|---------------------------|-------------------
+sucesso		  	|	  200(ok)	    |	  {status:1}
+Parametro invalido	|	  400(bad request)  |	  {status:2}
+Duplicidade		|	  409(conflict)	    |	  {status:3}
+Erro interno		|	  500(I.S.E)	    |	  {status:4}
+------------------------------------------------------------------------
+
+GET
+------------------------------------------------------------------------
+Cenario      		|	Response status     |	Response Json
+------------------------|---------------------------|-------------------
+sucesso		  	|	  200(ok)	    |	  {status:1}
+Não localizado		|	  400(not found)    |	  {status:2}
+Erro interno		|	  500(I.S.E)	    |	  {status:3}
+------------------------------------------------------------------------
+
+PUT
+------------------------------------------------------------------------
+Cenario      		|	Response status     |	Response Json
+------------------------|---------------------------|-------------------
+sucesso		  	|	  200(ok)	    |	  {status:1}
+Parametros invalido	|	  400(bad request)  |	  {status:2}
+Sem modificações	|	  304(not modified) |	  {status:3}
+Erro interno		|	  500(I.S.E)	    |	  {status:4}
+------------------------------------------------------------------------
+
+DELETE
+------------------------------------------------------------------------
+Cenario      		|	Response status     |	Response Json
+------------------------|---------------------------|-------------------
+sucesso		  	|	  200(ok)	    |	  {status:1}
+Parametros Invalidos	|	  400(bad request)  |	  {status:2}
+Erro interno		|	  500(I.S.E)	    |	  {status:3}
+------------------------------------------------------------------------
